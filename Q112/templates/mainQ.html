@@ -1,0 +1,24 @@
+{% extends 'sidepage_base.html' %}
+
+{% block 'javascript_block' %}
+{% load staticfiles %}
+<script src="{% static 'js/mainq.js' %}"></script>
+{% endblock %}
+
+{% block 'sidepage_title' %}
+
+{% endblock %}
+
+{% block 'middle_pain_content' %}
+
+<div class = "sidepage-body-top">
+</div>
+
+<div class = "qID" data-qid = "11"></div> 
+
+<div class = "sidepage-body-bottom">
+	<button type = "button" class = "queue-button col-md-2 col-md-offset-2">Join the Q!</button>
+	<input type = "text" class = "queue-input col-md-6 "></input>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,100italic,100,500,700' rel='stylesheet' type='text/css'>
+  <script src="{% static 'lib/jquery.js' %}"></script>
+  <script src="{% static 'js/homepage.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sidepage.css' %}">
+  {% block 'javascript_block' %}
+  {% endblock %}
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color:green;font-size:160%" href="/">15-112 Queue!</a>
+      <a class="navbar-brand" style="color:green;font-size:160%" href="/theQ">THE Q</a>
+      <a class="navbar-brand" style="color:green;font-size:160%" href="/allQs">OLD Q's</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+{% block 'main_content' %}
+
+{% endblock %}
+</body>
+</html>

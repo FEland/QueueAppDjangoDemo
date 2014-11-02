@@ -1,0 +1,63 @@
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+	position: relative;
+}
+
+.navbar-brand {
+	margin-right: 20px;
+}
+
+.navbar-brand:hover {
+	color: #99FF66 !important;
+}
+
+.homepage-title {
+	font-size: 900%;
+	font-weight: 900;
+	color: white;
+	text-align: center;
+	margin-top: 300px;
+	margin-bottom: 200px;
+}
+
+.homepage-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter:blur(5px); 
+  -o-filter:blur(5px); 
+  -ms-filter:blur(5px); 
+  -moz-filter:blur(5px); 
+  -webkit-filter:blur(5px);
+}
+
+.main-page-bottom {
+	background: green;
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.main-page-heading {
+	font-weight: 600;
+	font-size: 300%;
+	color: black;
+	text-align: center;
+}
+
+.main-page-info {
+	font-size: 700%;
+	color: green;
+	text-align: center;
+}
+

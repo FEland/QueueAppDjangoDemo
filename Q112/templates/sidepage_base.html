@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block 'main_content' %}
+<img src = "http://www.brandonhall.com/blogs/wp-content/uploads/2013/09/classroom-1.jpg" class = "homepage-img"/>
+
+<div class = "row">
+  <div class = "col-md-10 col-lg-10 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1 sidepage-main">
+  	<div class = "row">
+  		<div class = "col-md-12">
+  			<div class = "sidepage-title">
+  				{% block 'sidepage_title' %}
+  				{% endblock %}
+  			</div>
+  		</div>
+  	</div>
+  	<div class = "sidepage-body col-md-12">
+    	{% block 'middle_pain_content' %}
+    	{% endblock %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
